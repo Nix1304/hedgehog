@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Hedgehog</title>
 </head>
 <body>
     <div class="header">
+        <img src="./img/h-left.png" alt="" class="h-left">
+        <img src="./img/h-right.png" alt="" class="h-right">
+
         <div class="navbar">
             <div class="navbar__logo">
                 <img src="./img/logo.svg" alt="#">
@@ -78,21 +81,95 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="hedgehogs">
-            <img src="./img/egan.svg" alt="">
-            <div class="hedgehogs__text">
+    <section class="cards">
+        <img class="card__arrow" src="./img/arr_left.svg" alt="<-">
 
-                <h3 class="h3_title">Ежик “Евгений”</h3>
-                <p class="p-text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </p>
+        <div class="cards__item">
+            <div class="card__text">
+                <h4 class="card__title">Ежик “Евгений”</h4>
+                <p class="card__desc">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимание </p>
+                <p class="card__price card__price-new">3 000 ₽</p>
+                <p class="card__price-old">1 500 ₽</p>
+            </div>
+            <img class="card__img" src="./img/evgen.png" alt="hed-card">
+        </div>
+
+        <div class="cards__item cards__item-2">
+            <div class="card__text">
+                <h4 class="card__title">Ежик “Максим”</h4>
+                <p class="card__desc">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                <p class="card__price card__price-new">5 000 ₽</p>
+                <p class="card__price-old">2 500 ₽</p>
+            </div>
+            <img class="card__img" src="./img/max.png" alt="hed-card">
+        </div>
+
+        <img class="card__arrow" src="./img/arr_right.svg" alt="->">
+    </section>
+
+    <form class="form">
+        <h2 class="form__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+
+        <div class="form__buttons">
+            <div class="form__target">
+                <button class="form__button form__button-active">хочу ёжика для себя</button>
+                <button class="form__button">хочу ёжика для детей</button>
+                <button class="form__button">хочу ёжика для разведения</button>
+            </div>
+
+            <div class="form__count">
+                <div class="form__column">
+                    <label class="check"><input type="radio" checked> Мне нужен 1-2 ёжика</label>
+                    <label class="check"><input type="radio"> Мне нужны 3-4 ёжика</label>
+                </div>
+
+                <div class="form__column">
+                    <label class="check"><input type="radio"> Мне нужны 3 и более ёжиков</label>
+                    <label class="check"><input type="radio"> Пока присматриваюсь</label>
+                </div>
             </div>
         </div>
-        <div class="skidka">
-            <p class="p_skidka_text">-50%</p>
+
+        <div class="form__inputs">
+            <input type="text" placeholder="Ваше имя" class="form__input">
+            <input type="tel" placeholder="Ваш телефон" class="form__input">
+            <input type="email" placeholder="Ваш e-mail" class="form__input">
         </div>
-        <div class="money">
-            <p class="p_money_text-one">3000р</p>
-            <p class="p_money_text-two">1500р</p>
+        <textarea name="com" cols="30" rows="10" class="form__comment" placeholder="Комментарий к заявке"></textarea>
+    </form>
+    <div class="buy">Купить ёжика</div>
+
+
+    <div class="remains">
+        <img src="./img/hedgehog.svg" alt="">
+        <h2>У наc осталось еще: <span class="remains__count">25 ёжиков</span></h2>
+    </div>
+    <p class="sale">Торопитесь! Акция действует до 26. 02. 2023</p>
+
+    <div class="footer">
+        <div class="footer__logo">
+            <img class="footer__logo-img" src="./img/logo-light.svg" alt="">
+            <div class="footer__logo-text">
+                <p>Все права защищены.</p>
+                <p>Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+            </div>
+        </div>
+
+        <div class="footer__right">
+            <div class="footer__links">
+                <div class="footer__link">Каталог</div>
+                <div class="footer__link">О нас</div>
+                <div class="footer__link">Контакты</div>
+                <div class="footer__link">Галерея</div>
+            </div>
+
+            <div class="footer__socials">
+                <img src="./img/ig.svg" class="footer__social" alt="instagram">
+                <img src="./img/fb.svg" class="footer__social" alt="facebook">
+                <img src="./img/tw.svg" class="footer__social" alt="twitter">
+            </div>
+
+            <div class="footer__number">+7(965)569-89-98</div>
         </div>
     </div>
 </body>
